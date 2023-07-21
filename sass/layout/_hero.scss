@@ -14,16 +14,17 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
- }
- .hero-section__title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    width: 696px;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    color: var(--light-text-color, white);
+
+    &__title {
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      width: 696px;
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      color: var(--light-text-color, white);
+   }
  }

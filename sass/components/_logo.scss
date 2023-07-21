@@ -3,8 +3,8 @@
     font-size: 26px;
     line-height: 1.2;
     color: var(--logo-text-color, black);
-    /* margin-right: 92px; */
- }
- .logo_accent {
-    color: var(--accent-color, #2196F3);
+
+    &_accent {
+      color: var(--accent-color, #2196F3);
+    } 
  }

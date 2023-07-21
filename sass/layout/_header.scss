@@ -1,15 +1,17 @@
 .header {
     border-bottom: 1px solid #ECECEC;
+
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;   
+    }
+   
+    &__logo {
+         margin-right: 92px;
+    }
  }
-  .header__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;   
- }
- 
-.header__logo {
-    margin-right: 92px;
- }
+  
  .navigation {
     display: flex;
     align-items: center;
@@ -20,42 +22,43 @@
     display: flex;
     align-items: center;
     gap: 50px;
- }
  
-  .menu-list__link {   
-     font-weight: 500;
-     line-height: 1.14;
-     letter-spacing: 0.02em;
-     color: var(--main-text-color,black);
-     display: block;
-     padding-top: 32px;
-     padding-bottom: 32px;
-     position: relative;
-     transition-property: color;
-     transition-duration: 250ms;
-     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .menu-list__link:hover,
-  .menu-list__link:focus {
-    color: var(--accent-color, #2196F3);
-  }
  
-  .menu-list__link_current {
-     color: var(--accent-color, #2196F3);
-  } 
- .menu-list__link_current::after {
-    content: '';
-    display: flex;
-    width: 100%;
-    height: 4px;
-    position: absolute;
-    bottom: 0;
-    transform: scale(1.08);
-    border-radius: 2px;
-    background-color: var(--accent-color,blue);
- }
+    &__link {   
+      font-weight: 500;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: var(--main-text-color,black);
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      position: relative;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+         color: var(--accent-color, #2196F3);
+      }
+      &_current {
+         color: var(--accent-color, #2196F3);
+      } 
+      &_current::after {
+         content: '';
+         display: flex;
+         width: 100%;
+         height: 4px;
+         position: absolute;
+         bottom: 0;
+         transform: scale(1.08);
+         border-radius: 2px;
+         background-color: var(--accent-color,blue);
+      }
+    }
+} 
  
- .link-contact {
+.link-contact {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -69,9 +72,10 @@
      transition-property: color, fill;
      transition-duration: 250ms;
      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  .link-contact:hover,
-  .link-contact:focus {
-    color: var(--accent-color, blue);
-    fill: currentColor;
-  }
+    
+      &:hover,
+      &:focus {
+         color: var(--accent-color, blue);
+         fill: currentColor;
+      }
+} 
